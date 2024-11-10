@@ -1,64 +1,62 @@
 export default function Skills() {
-    return (
-        <div>
-            <section className="skills-section" id="skills">
-                <h2 className="skills-heading"> My <span className="highlighted-text">Skills</span></h2>
-                <div className="skills-container">
-                    <div className="skills-category">
-                        <h3 className="category-title">Coding Skills</h3>
-                        <div className="skills-list">
-                            <div className="skill-progress">
-                                <h3>HTML <span className="progress-percentage">85%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '85%' }}></span>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <h3>CSS <span className="progress-percentage">75%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '75%' }}></span>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <h3>Typescript <span className="progress-percentage">65%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '65%' }}></span>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <h3>Next.js <span className="progress-percentage">85%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '85%' }}></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <div className="px-4 sm:px-8 bg-black md:px-16 lg:px-24">
+      <section className="skills-section py-16" id="skills">
+        <h2 className="text-4xl sm:text-5xl font-bold text-white text-center mb-12">
+          My <span className="text-blue-500">Skills</span>
+        </h2>
 
-                    <div className="skills-category">
-                        <h3 className="category-title">Professional Skills</h3>
-                        <div className="skills-list">
-                            <div className="skill-progress">
-                                <h3>Web Design <span className="progress-percentage">65%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '65%' }}></span>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <h3>Resume Making <span className="progress-percentage">85%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '85%' }}></span>
-                                </div>
-                            </div>
-                            <div className="skill-progress">
-                                <h3>Portfolio Making <span className="progress-percentage">90%</span></h3>
-                                <div className="progress-bar">
-                                    <span className="progress-fill" style={{ width: '90%' }}></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div className="skills-container mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
+          {/* Coding Skills */}
+          <div className="skills-category">
+            <h3 className="text-2xl font-semibold text-white mb-6">Coding Skills</h3>
+            <div className="skills-list space-y-6">
+              {[
+                { skill: 'HTML', percentage: 85 },
+                { skill: 'CSS', percentage: 75 },
+                { skill: 'Typescript', percentage: 65 },
+                { skill: 'Next.js', percentage: 85 }
+              ].map(({ skill, percentage }) => (
+                <div key={skill} className="skill-progress">
+                  <h3 className="text-white text-lg flex justify-between items-center">
+                    {skill} <span className="text-white">{percentage}%</span>
+                  </h3>
+                  <div className="w-full bg-gray-800 h-2 rounded-full mt-2">
+                    <div
+                      className="bg-blue-500 h-2 rounded-full transition-all duration-300 ease-in-out"
+                      style={{ width: `${percentage}%` }}
+                    ></div>
+                  </div>
                 </div>
-            </section>
+              ))}
+            </div>
+          </div>
+
+          {/* Professional Skills */}
+          <div className="skills-category">
+            <h3 className="text-2xl font-semibold text-white mb-6">Professional Skills</h3>
+            <div className="skills-list space-y-6">
+              {[
+                { skill: 'Web Design', percentage: 65 },
+                { skill: 'Resume Making', percentage: 85 },
+                { skill: 'Portfolio Making', percentage: 90 }
+              ].map(({ skill, percentage }) => (
+                <div key={skill} className="skill-progress">
+                  <h3 className="text-white text-lg flex justify-between items-center">
+                    {skill} <span className="text-white">{percentage}%</span>
+                  </h3>
+                  <div className="w-full bg-gray-800 h-2 rounded-full mt-2">
+                    <div
+                      className="bg-blue-500 h-2 rounded-full transition-all duration-300 ease-in-out"
+                      style={{ width: `${percentage}%` }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
