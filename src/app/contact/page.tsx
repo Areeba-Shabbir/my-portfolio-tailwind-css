@@ -8,17 +8,17 @@ export default function Contact() {
               Contact <span className="text-blue-500">Me!</span>
             </h2>
             <p className="text-white mb-6">
-              "Let’s create something amazing together! I’m here to answer questions, explore new ideas, or chat about projects. Drop me a message!"
+              Lets create something amazing together! I am here to answer questions, explore new ideas, or chat about projects. Drop me a message!
             </p>
             <div className="list text-white space-y-4">
               <li>
                 <a href="tel:03012497612">
-                  <h5 className="font-semibold">Here's my contact number:</h5> 03012497612
+                  <h5 className="font-semibold"> My contact number:</h5> 03012497612
                 </a>
               </li>
               <li>
                 <a href="mailto:shabbirareeba94@gmail.com">
-                  <h5 className="font-semibold">Here's my Email:</h5> shabbirareeba94@gmail.com
+                  <h5 className="font-semibold"> My Email:</h5> shabbirareeba94@gmail.com
                 </a>
               </li>
             </div>

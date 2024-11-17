@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image"; 
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
@@ -35,7 +36,12 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="w-14 h-14 flex items-center justify-center transition-all duration-300 ease-in-out transform hover:scale-125"
         >
-          <img src="https://vercel.com/favicon.ico" alt="Vercel" className="w-8 h-8" />
+          <Image
+            src="/favicon.ico" 
+            alt="Vercel"
+            width={32} 
+            height={32} 
+          />
         </a>
       </div>
     </footer>

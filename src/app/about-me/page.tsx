@@ -23,7 +23,7 @@ export default function About() {
           </h2>
           <h4 className="text-lg text-white mt-2">Frontend Developer</h4>
           <p className="text-white mt-4 text-base sm:text-lg">
-            I’m a frontend developer with a strong focus on building responsive and visually appealing web applications. My skill set includes HTML, CSS, TypeScript, and Next.js, enabling me to create smooth, interactive user experiences. I’m passionate about crafting clean, optimized code and bringing designs to life in a way that engages users and enhances functionality. Whether it’s creating modern UIs or ensuring a seamless user journey, I aim to combine aesthetics with performance in every project. My goal is to continuously grow as a developer and contribute to meaningful, impactful web applications.
+            I am a frontend developer with a strong focus on building responsive and visually appealing web applications. My skill set includes HTML, CSS, TypeScript, and Next.js, enabling me to create smooth, interactive user experiences. I am passionate about crafting clean, optimized code and bringing designs to life in a way that engages users and enhances functionality. Whether it is creating modern UIs or ensuring a seamless user journey, I aim to combine aesthetics with performance in every project. My goal is to continuously grow as a developer and contribute to meaningful, impactful web applications.
           </p>
         </div>
       </section>
